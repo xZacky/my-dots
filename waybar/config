@@ -1,0 +1,94 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-top": 1,
+    "margin-left": 1,
+    "margin-bottom": 0,
+    "margin-right": 1,
+    "spacing": 3, // Gaps between modules
+    "modules-left": ["cpu", "memory", "disk", "hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["backlight", "pulseaudio", "network", "bluetooth", "battery"],
+    "cpu": {
+        "format": "  {usage}%"
+    },
+    "memory": {
+        "format": "  {percentage}%",
+        "format-alt": "  {used:0.1f}G"
+    },
+    "disk": {
+        "format": "  {percentage_used}%",
+        "tooltip-format": "{used} used out of {total}"
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "󰲠",
+            "2": "󰲢",
+            "3": "󰲤",
+            "4": "󰲦",
+            "5": "󰲨",
+            "6": "󰲪",
+            "7": "󰲬",
+            "8": "󰲮",
+            "9": "󰲰",
+            "10": "󰿬"
+        },
+        "on-click": "activate",
+    },
+    "clock": {
+        "format": "{:%a %m-%d %H:%M}",
+        "tooltip": false
+    },
+    "backlight": {
+        "device": "DP-1",
+        "format": "{icon}  {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-bluetooth": "󰂯  {volume}%",
+        "format-bluetooth-muted": "󰂯  muted",
+        "format-muted": "󰕿  muted",
+        "format-icons": {
+            "headphone": "󰋋",
+            "phone": "󰏲",
+            "portable": "",
+            "car": "󰄋",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "pavucontrol"
+    },
+    "network": {
+        "format-wifi": "󰖩  {essid}",
+        "format-ethernet": "󰛳  wired",
+        "format-disconnected": "  disconnected",
+        "tooltip-format-wifi": "󰖩  {essid}",
+        "tooltip-format-ethernet": "󰛳  {ifname}",
+        "tooltip-format-disconnected": "  disconnected"
+    },
+    "bluetooth": {
+        "format": "  {status}",
+        "format-connected": "  {device_alias}",
+        "tooltip": true,
+        "tooltip-format": "  {device_alias}",
+        "on-click": "~/.config/waybar/scripts/bluetooth.sh &"
+    },
+    "battery": {
+        "bat": "BAT0",
+        "adapter": "ADP0",
+        "interval": 30,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-warning": "{icon}  {capacity}%",
+        "format-critical": "{icon}  {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-plugged": "  {capacity}%",
+        "format-full": "  {capacity}%",
+        "format-alt": "{icon}  {time}",
+        "format-icons": [" ", " ", " ", " ", " "]
+    }
+}
