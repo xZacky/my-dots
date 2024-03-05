@@ -6,8 +6,7 @@ return {
     "BufNewFile"
   },
   dependencies = {
-    "nvim-treesitter/playground",
-    "nvim-treesitter/nvim-treesitter-textobjects"
+    "nvim-treesitter/playground"
   },
   build = ":TSUpdate",
   config = function()
@@ -18,7 +17,7 @@ return {
         additional_vim_regex_highlighting = false
       },
       indent = {
-        enable = true
+        enable = false
       },
       auto_install = true,
       ensure_installed = {
@@ -28,5 +27,6 @@ return {
         enable = true
       }
     }
+    require("vim.treesitter.query").set("tablegen", "injections", "")
   end
 }

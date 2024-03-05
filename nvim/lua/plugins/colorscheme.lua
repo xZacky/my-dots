@@ -94,7 +94,7 @@ return {
                 regex = "#7aa2f7", -- blue
                 comment = "#565f89", -- gray
                 punct = "#bb9af7", -- magenta
-                special1 = "#ff9e64", -- builtin function, orange
+                special1 = "#ff9e64", -- method, orange
                 special2 = "#7aa2f7", -- blue
                 special3 = "#bb9af7" -- return, magenta
               },
@@ -122,8 +122,14 @@ return {
             ["@string.escape"] = {
               bold = false
             },
-            ["@variable"] = {
+            ["@string.special"] = {
+              fg = colors.theme.syn.string
+            },
+            ["@variable.python"] = {
               fg = colors.theme.syn.variable
+            },
+            ["@variable.tablegen"] = {
+              fg = colors.theme.syn.type
             },
             ["@variable.builtin"] = {
               fg = colors.theme.syn.special2,
@@ -134,6 +140,9 @@ return {
             },
             ["@lsp.type.namespace"] = {
               fg = colors.theme.syn.special2
+            },
+            ["@lsp.type.variable"] = {
+              fg = colors.theme.syn.variable
             }
           }
         end

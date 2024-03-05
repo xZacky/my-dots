@@ -32,9 +32,17 @@ keymap.set("n", "<C-z>", "u")
 
 -- disable "R"
 keymap.set("n", "R", "")
+keymap.set("v", "R", "")
 
 -- disable "U"
 keymap.set("n", "U", "")
+keymap.set("v", "U", "")
+
+-- disable "J" in visual mode
+keymap.set("v", "J", "")
+
+-- disable "K" in visual mode
+keymap.set("v", "K", "")
 
 -- disable "gd" and "gD"
 keymap.set("n", "gd", "")
