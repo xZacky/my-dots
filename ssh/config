@@ -1,0 +1,5 @@
+Host github.com
+    User git
+    Hostname github.com
+    TCPKeepAlive yes
+    ProxyCommand ncat --proxy 127.0.0.1:7891 --proxy-type socks5 %h %p
