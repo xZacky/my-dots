@@ -118,6 +118,9 @@ return {
             ["@constant.builtin"] = {
               fg = colors.theme.syn.keyword
             },
+            ["@function.builtin"] = {
+              fg = colors.theme.syn.preproc
+            },
             ["@keyword.operator"] = {
               bold = false
             },
@@ -165,6 +168,15 @@ return {
             },
             ["@lsp.type.variable"] = {
               fg = colors.theme.syn.variable
+            },
+            ["@lsp.typemod.variable.defaultLibrary"] = {
+              fg = colors.theme.syn.variable
+            },
+            ["@lsp.typemod.function.defaultLibrary"] = {
+              fg = colors.theme.syn.fun
+            },
+            ["@lsp.typemod.method.defaultLibrary"] = {
+              fg = colors.theme.syn.fun
             }
           }
         end
