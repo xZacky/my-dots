@@ -58,6 +58,9 @@ return {
     require("mason-nvim-dap").setup {
       ensure_installed = {
         "codelldb",
+        -- note: to use debugpy with pyenv-virtualenv, modify debugpy and
+        -- debugpy-adapter under ~/.local/share/nvim/mason/packages/debugpy
+        -- to use the python under ~/.pyenv/versions/<venv>/bin
         "python"
       },
       automatic_installation = false,
@@ -98,8 +101,8 @@ return {
     vim.cmd("highlight DapBreakpoint guifg=#db4b4b") -- red
     vim.cmd("highlight DapBreakpointRejected guifg=#565f89") -- gray
     vim.cmd("highlight DapStopped guifg=#db4b4b") -- red
-    vim.cmd("sign define DapBreakpoint text= texthl=DapBreakpoint")
-    vim.cmd("sign define DapBreakpointRejected text= texthl=DapBreakpointRejected")
+    vim.cmd("sign define DapBreakpoint text=󰠭 texthl=DapBreakpoint")
+    vim.cmd("sign define DapBreakpointRejected text=󰠭 texthl=DapBreakpointRejected")
     vim.cmd("sign define DapStopped text=󰋇 texthl=DapStopped")
   end
 }
