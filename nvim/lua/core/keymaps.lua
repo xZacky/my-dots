@@ -20,6 +20,8 @@ keymap.set("n", "<C-q>", "<C-w>q")
 -- accelerated "j" and "k"
 keymap.set("n", "J", "10j")
 keymap.set("n", "K", "10k")
+keymap.set("v", "J", "10j")
+keymap.set("v", "K", "10k")
 
 -- write (save)
 keymap.set("n", "<C-s>", "<Cmd>:w!<CR>")
@@ -38,12 +40,12 @@ keymap.set("v", "R", "")
 keymap.set("n", "U", "")
 keymap.set("v", "U", "")
 
--- disable "J" in visual mode
-keymap.set("v", "J", "")
-
--- disable "K" in visual mode
-keymap.set("v", "K", "")
-
 -- disable "gd" and "gD"
 keymap.set("n", "gd", "")
 keymap.set("n", "gD", "")
+keymap.set("v", "gd", "")
+keymap.set("v", "gD", "")
+
+-- cancel search highlighing
+keymap.set("n", "<Leader>x", "<Cmd>nohl<CR>")
+keymap.set("v", "<Leader>x", "<Cmd>nohl<CR>")

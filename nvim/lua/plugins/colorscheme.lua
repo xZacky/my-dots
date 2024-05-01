@@ -160,6 +160,9 @@ return {
               fg = colors.theme.syn.type
             },
             -- LSP
+            ["@lsp.type.bracket"] = {
+              fg = colors.theme.syn.punct
+            },
             ["@lsp.type.enumMember"] = {
               fg = colors.theme.syn.identifier
             },
@@ -169,14 +172,14 @@ return {
             ["@lsp.type.variable"] = {
               fg = colors.theme.syn.variable
             },
-            ["@lsp.typemod.variable.defaultLibrary"] = {
-              fg = colors.theme.syn.variable
-            },
             ["@lsp.typemod.function.defaultLibrary"] = {
               fg = colors.theme.syn.fun
             },
             ["@lsp.typemod.method.defaultLibrary"] = {
               fg = colors.theme.syn.fun
+            },
+            ["@lsp.typemod.variable.defaultLibrary"] = {
+              fg = colors.theme.syn.variable
             }
           }
         end

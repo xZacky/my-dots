@@ -1,11 +1,11 @@
 {
     "layer": "top",
     "position": "top",
-    "margin-top": 1,
+    "margin-top": 2,
     "margin-left": 1,
     "margin-bottom": 0,
     "margin-right": 1,
-    "spacing": 3, // Gaps between modules
+    "spacing": 2, // Gaps between modules
     "modules-left": ["cpu", "memory", "disk", "hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["backlight", "pulseaudio", "network", "bluetooth", "battery"],
@@ -71,7 +71,8 @@
         "format": "  {status}",
         "format-connected": "  {device_alias}",
         "tooltip": true,
-        "tooltip-format": "  {device_alias}",
+        "tooltip-format": "  {status}",
+        "tooltip-format-connected": "  {device_alias}",
         "on-click": "~/.config/waybar/scripts/bluetooth.sh &"
     },
     "battery": {
@@ -85,7 +86,7 @@
         "format": "{icon}  {capacity}%",
         "format-warning": "{icon}  {capacity}%",
         "format-critical": "{icon}  {capacity}%",
-        "format-charging": "  {capacity}%",
+        "format-charging": "  {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-full": "  {capacity}%",
         "format-alt": "{icon}  {time}",
