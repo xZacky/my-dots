@@ -71,7 +71,7 @@ window#waybar {
 }
 
 #bluetooth {
-  color: #7dcfff; /* cyan */
+  color: #7aa2f7; /* blue */
 }
 
 #bluetooth.disconnected {
