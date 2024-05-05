@@ -1,4 +1,3 @@
--- ui
 return {
   -- bufferline
   {
@@ -48,13 +47,13 @@ return {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     dependencies = {
-      "nvim-tree/nvim-web-devicons", -- show icons
-      "linrongbin16/lsp-progress.nvim", -- LSP loading progress
-      "folke/tokyonight.nvim"
+      "nvim-tree/nvim-web-devicons",    -- show icons
+      "linrongbin16/lsp-progress.nvim" -- LSP loading progress
     },
     opts = {
       options = {
-        theme = "tokyonight",
+        -- only show on current cursor window
+        globalstatus = true,
         -- do not use separators for sections
         section_separators = {
           left = "",
@@ -65,8 +64,38 @@ return {
           left = "",
           right = ""
         },
-        -- only show on current cursor window
-        globalstatus = true
+        theme = {
+          normal = {
+            a = { bg = "#7aa2f7", fg = "#16161e" },
+            b = { bg = "#3b4261", fg = "#7aa2f7" },
+            c = { bg = "#1f2335", fg = "#a9b1d6" }
+          },
+          insert = {
+            a = { bg = "#9ece6a", fg = "#16161e" },
+            b = { bg = "#3b4261", fg = "#9ece6a" }
+          },
+          command = {
+            a = { bg = "#f7768e", fg = "#16161e" },
+            b = { bg = "#3b4261", fg = "#f7768e" }
+          },
+          visual = {
+            a = { bg = "#bb9af7", fg = "#16161e" },
+            b = { bg = "#3b4261", fg = "#bb9af7" }
+          },
+          replace = {
+            a = { bg = "#ff9e64", fg = "#16161e" },
+            b = { bg = "#3b4261", fg = "#ff9e64" }
+          },
+          terminal = {
+            a = { bg = "#73daca", fg = "#16161e" },
+            b = { bg = "#3b4261", fg = "#73daca" }
+          },
+          inactive = {
+            a = { bg = "#1f2335", fg = "#7aa2f7" },
+            b = { bg = "#1f2335", fg = "#3b4261" },
+            c = { bg = "#1f2335", fg = "#3b4261" }
+          }
+        }
       },
       sections = {
         -- customize the diagnostics part
@@ -108,11 +137,44 @@ return {
     "utilyre/barbecue.nvim",
     event = "VeryLazy",
     dependencies = {
-      "SmiteshP/nvim-navic", -- code path
-      "folke/tokyonight.nvim"
+      "SmiteshP/nvim-navic" -- code path
     },
     opts = {
-      theme = "tokyonight"
+      theme = {
+        normal = { fg = "#a9bed6" },
+        ellipsis = { fg = "#737aa2" },
+        separator = { fg = "#737aa2" },
+        modified = { fg = "#ff9e64" },
+        dirname = { fg = "#737aa2" },
+        basename = { fg = "#a9bed6", bold = true },
+        context = { fg = "#a9bed6" },
+        context_file = { fg = "#a9bed6" },
+        context_module = { fg = "#bb9af7" },
+        context_namespace = { fg = "#bb9af7" },
+        context_package = { fg = "#7dcfff" },
+        context_class = { fg = "#73daca" },
+        context_method = { fg = "#ff9e64" },
+        context_property = { fg = "#7aa2f7" },
+        context_field = { fg = "#7aa2f7" },
+        context_constructor = { fg = "#73daca" },
+        context_enum = { fg = "#73daca" },
+        context_interface = { fg = "#ff9e64" },
+        context_function = { fg = "#ff9e64" },
+        context_variable = { fg = "#7dcfff" },
+        context_constant = { fg = "#7dcfff" },
+        context_string = { fg = "#9ece6a" },
+        context_number = { fg = "#9ece6a" },
+        context_boolean = { fg = "#9ece6a" },
+        context_array = { fg = "#7dcfff" },
+        context_object = { fg = "#7dcfff" },
+        context_key = { fg = "#9ece6a" },
+        context_null = { fg = "#bb9af7" },
+        context_enum_member = { fg = "#7aa2f7" },
+        context_struct = { fg = "#73daca" },
+        context_event = { fg = "#ff9e64" },
+        context_operator = { fg = "#f7768e" },
+        context_type_parameter = { fg = "#73daca" }
+      }
     }
   }
 }

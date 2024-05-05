@@ -1,4 +1,3 @@
--- file explorer
 return {
   "nvim-tree/nvim-tree.lua",
   event = "VeryLazy",
@@ -42,6 +41,20 @@ return {
       on_attach = on_attach,
       git = {
         enable = false
+      },
+      renderer = {
+        icons = {
+          glyphs = {
+            default = "",
+            symlink = "",
+            folder = {
+              empty = "",
+              empty_open = "",
+              symlink = "",
+              symlink_open = ""
+            }
+          }
+        },
       },
       view = {
         width = 33

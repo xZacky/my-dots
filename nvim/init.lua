@@ -17,4 +17,27 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- initialize lazy with loading in the plugins directory
-require("lazy").setup("plugins")
+require("lazy").setup("plugins", {
+  ui = {
+    backdrop = 100,
+    icons = {
+      cmd = "",
+      config = "",
+      event = "󱐋",
+      ft = "",
+      import = "",
+      init = "",
+      plugin = "",
+      runtime = "",
+      require = "",
+      source = "",
+      start = "󰐊",
+      task = "󰄬"
+    }
+  }
+})
+
+vim.cmd("colorscheme kanagawa")
+
+-- override icons
+require("extra.icons")
