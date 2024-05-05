@@ -98,9 +98,9 @@ return {
     vim.keymap.set("n", "<F11>", function() dap.step_into() end)
     vim.keymap.set("n", "<F12>", function() dap.step_out() end)
 
-    vim.cmd("highlight DapBreakpoint guifg=#db4b4b") -- red
+    vim.cmd("highlight DapBreakpoint guifg=#db4b4b")         -- red
     vim.cmd("highlight DapBreakpointRejected guifg=#565f89") -- gray
-    vim.cmd("highlight DapStopped guifg=#db4b4b") -- red
+    vim.cmd("highlight DapStopped guifg=#db4b4b")            -- red
     vim.cmd("sign define DapBreakpoint text=󰠭 texthl=DapBreakpoint")
     vim.cmd("sign define DapBreakpointRejected text=󰠭 texthl=DapBreakpointRejected")
     vim.cmd("sign define DapStopped text=󰋇 texthl=DapStopped")

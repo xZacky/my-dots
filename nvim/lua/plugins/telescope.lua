@@ -17,10 +17,10 @@ return {
     require("telescope").setup {
       extensions = {
         fzf = {
-          fuzzy = true, -- false will only do excat match
+          fuzzy = true,                   -- false will only do excat match
           override_generic_sorter = true, -- override the generic sorter
-          override_file_sorter = true, -- override the file sorter
-          case_mode = "smart_case" -- or "ignore_case" or "respect_case"
+          override_file_sorter = true,    -- override the file sorter
+          case_mode = "smart_case"        -- or "ignore_case" or "respect_case"
         }
       }
     }
@@ -35,6 +35,6 @@ return {
     -- use "<Leader>fd" to find document symbols when lsp attached.
 
     vim.cmd("highlight TelescopeBorder guifg=#545c7e") -- black6
-    vim.cmd("highlight TelescopeTitle guifg=#545c7e") -- black6
+    vim.cmd("highlight TelescopeTitle guifg=#545c7e")  -- black6
   end
 }

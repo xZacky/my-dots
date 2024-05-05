@@ -98,7 +98,7 @@ return {
                 special3 = "#bb9af7"    -- return, magenta
               },
               diag = {
-                error = "#db4b4b",   --red
+                error = "#db4b4b",   -- red
                 warning = "#ff9e64", -- orange
                 info = "#7dcfff",    -- cyan
                 hint = "#73daca"     -- aqua
@@ -139,7 +139,7 @@ return {
               fg = colors.theme.syn.keyword
             },
             ["@variable.builtin"] = {
-              fg = colors.theme.syn.identifier,
+              fg = colors.theme.syn.keyword,
               italic = false
             },
             ["@variable.builtin.tablegen"] = {

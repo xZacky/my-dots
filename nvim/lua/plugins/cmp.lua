@@ -32,12 +32,8 @@ return {
         end
       },
       sources = cmp.config.sources {
-        {
-          name = "nvim_lsp"
-        },
-        {
-          name = "luasnip"
-        }
+        { name = "nvim_lsp" },
+        { name = "luasnip" }
       },
       mapping = cmp.mapping.preset.insert {
         ["<Tab>"] = cmp.mapping(
@@ -50,10 +46,7 @@ return {
               fallback()
             end
           end,
-          {
-            "i",
-            "s"
-          }
+          { "i", "s" }
         ),
         ["<S-Tab>"] = cmp.mapping(
           function(fallback)
@@ -65,10 +58,7 @@ return {
               fallback()
             end
           end,
-          {
-            "i",
-            "s"
-          }
+          { "i", "s" }
         ),
         ["<CR>"] = cmp.mapping.confirm {
           select = false
@@ -97,9 +87,7 @@ return {
       {
         mapping = cmp.mapping.preset.cmdline(),
         sources = {
-          {
-            name = "buffer"
-          }
+          { name = "buffer" }
         }
       }
     )
@@ -109,12 +97,8 @@ return {
       {
         mapping = cmp.mapping.preset.cmdline(),
         sources = cmp.config.sources {
-          {
-            name = "path"
-          },
-          {
-            name = "cmdline"
-          }
+          { name = "path" },
+          { name = "cmdline" }
         }
       }
     )

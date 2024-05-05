@@ -7,9 +7,7 @@ return {
       require("bufferline").setup {
         options = {
           style_preset = require("bufferline").style_preset.no_italic, -- do not use italic
-          indicator = {
-            style = 'none'
-          },
+          indicator = { style = "none" },
           diagnostics = "nvim_lsp",
           diagnostics_update_in_insert = false,
           show_buffer_close_icons = false,
@@ -22,7 +20,8 @@ return {
               separator = true
             }
           },
-          separator_style = "thin"
+          separator_style = "thin",
+          sort_by = "insert_at_end"
         }
       }
     end
@@ -47,7 +46,7 @@ return {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     dependencies = {
-      "nvim-tree/nvim-web-devicons",    -- show icons
+      "nvim-tree/nvim-web-devicons",   -- show icons
       "linrongbin16/lsp-progress.nvim" -- LSP loading progress
     },
     opts = {
@@ -141,14 +140,14 @@ return {
     },
     opts = {
       theme = {
-        normal = { fg = "#a9bed6" },
+        normal = { fg = "#a9b1d6" },
         ellipsis = { fg = "#737aa2" },
         separator = { fg = "#737aa2" },
         modified = { fg = "#ff9e64" },
         dirname = { fg = "#737aa2" },
-        basename = { fg = "#a9bed6", bold = true },
-        context = { fg = "#a9bed6" },
-        context_file = { fg = "#a9bed6" },
+        basename = { fg = "#a9b1d6", bold = true },
+        context = { fg = "#a9b1d6" },
+        context_file = { fg = "#a9b1d6" },
         context_module = { fg = "#bb9af7" },
         context_namespace = { fg = "#bb9af7" },
         context_package = { fg = "#7dcfff" },

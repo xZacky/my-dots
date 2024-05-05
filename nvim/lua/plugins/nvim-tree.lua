@@ -39,9 +39,7 @@ return {
     vim.g.loaded_netrwPlugin = 1
     require("nvim-tree").setup {
       on_attach = on_attach,
-      git = {
-        enable = false
-      },
+      git = { enable = false },
       renderer = {
         icons = {
           glyphs = {
@@ -56,9 +54,7 @@ return {
           }
         },
       },
-      view = {
-        width = 33
-      }
+      view = { width = 33 }
     }
 
     vim.keymap.set("n", "<Leader>e", "<Cmd>NvimTreeToggle<CR>")
