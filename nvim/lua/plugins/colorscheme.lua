@@ -114,6 +114,9 @@ return {
               bold = false
             },
             -- treesitter
+            ["@attribute.mlir"] = {
+              fg = colors.theme.syn.string
+            },
             ["@constant.builtin"] = {
               fg = colors.theme.syn.keyword
             },
@@ -147,6 +150,12 @@ return {
               italic = false
             },
             ["@variable.cpp"] = {
+              fg = colors.theme.syn.variable
+            },
+            ["@variable.llvm"] = {
+              fg = colors.theme.syn.variable
+            },
+            ["@variable.mlir"] = {
               fg = colors.theme.syn.variable
             },
             ["@variable.python"] = {

@@ -72,9 +72,9 @@ require("nvim-web-devicons").setup {
       name = "Mailmap"
     },
     ["cmakelists.txt"] = {
-      icon = "",
-      color = "#c0caf5",
-      name = "CMakeLists"
+      icon = "",
+      color = "#9ece6a",
+      name = "CmakeLists"
     },
     ["commit_editmsg"] = {
       icon = "",
@@ -199,8 +199,8 @@ require("nvim-web-devicons").setup {
       name = "Cache"
     },
     ["cc"] = {
-      icon = "",
-      color = "#f34b7d",
+      icon = "",
+      color = "#519aba",
       name = "CPlusPlus"
     },
     ["cfg"] = {
@@ -229,8 +229,8 @@ require("nvim-web-devicons").setup {
       name = "ClojureJS"
     },
     ["cmake"] = {
-      icon = "",
-      color = "#c0caf5",
+      icon = "",
+      color = "#9ece6a",
       name = "CMake"
     },
     ["conf"] = {
@@ -244,12 +244,12 @@ require("nvim-web-devicons").setup {
       name = "ConfigRu"
     },
     ["cpp"] = {
-      icon = "",
+      icon = "",
       color = "#519aba",
       name = "Cpp"
     },
     ["cs"] = {
-      icon = "",
+      icon = "",
       color = "#596706",
       name = "Cs"
     },
@@ -263,10 +263,10 @@ require("nvim-web-devicons").setup {
       color = "#42a5f5",
       name = "Css"
     },
-    ["cxx"] = {
-      icon = "",
-      color = "#519aba",
-      name = "Cxx"
+    ["cu"] = {
+      icon = "",
+      color = "#89e051",
+      name = "Cu"
     },
     ["Dockerfile"] = {
       icon = "",
@@ -369,7 +369,7 @@ require("nvim-web-devicons").setup {
       name = "Gz"
     },
     ["h"] = {
-      icon = "󰠩",
+      icon = "",
       color = "#a074c4",
       name = "H"
     },
@@ -379,12 +379,12 @@ require("nvim-web-devicons").setup {
       name = "Haml"
     },
     ["hh"] = {
-      icon = "󰠩",
+      icon = "",
       color = "#a074c4",
       name = "Hh"
     },
     ["hpp"] = {
-      icon = "󰠩",
+      icon = "",
       color = "#a074c4",
       name = "Hpp"
     },
@@ -392,11 +392,6 @@ require("nvim-web-devicons").setup {
       icon = "",
       color = "#e44d26",
       name = "Html"
-    },
-    ["hxx"] = {
-      icon = "󰠩",
-      color = "#a074c4",
-      name = "Hxx"
     },
     ["info"] = {
       icon = "",
@@ -420,8 +415,18 @@ require("nvim-web-devicons").setup {
     },
     ["log"] = {
       icon = "",
-      color = "#9ece6a",
+      color = "#c0caf5",
       name = "Log"
+    },
+    ["lua"] = {
+      icon = "",
+      color = "#5074e8",
+      name = "Lua"
+    },
+    ["luac"] = {
+      icon = "",
+      color = "#5074e8",
+      name = "Lua"
     },
     ["md"] = {
       icon = "",
@@ -532,6 +537,16 @@ require("nvim-web-devicons").setup {
       icon = "",
       color = "#ffb13b",
       name = "Svg"
+    },
+    ["td"] = {
+      icon = "",
+      color = "#73daca",
+      name = "Td"
+    },
+    ["tgz"] = {
+      icon = "",
+      color = "#c0caf5",
+      name = "Tgz"
     },
     ["ttf"] = {
       icon = "",
