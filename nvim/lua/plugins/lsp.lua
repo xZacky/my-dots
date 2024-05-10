@@ -17,7 +17,22 @@ return {
       clangd = {},
       cmake = {},
       jsonls = {},
-      lua_ls = {},
+      lua_ls = {
+        Lua = {
+          completion = {
+            autoRequire = false,
+            keywordSnippet = "Disable",
+            showWord = "Disable",
+            workspaceWord = false
+          },
+          runtime = { version = "LuaJIT" },
+          workspace = {
+            checkThirdParty = "Disable",
+            ignoreDir = { ".cache", ".git", "build" },
+            library = { vim.env.VIMRUNTIME }
+          }
+        }
+      },
       marksman = {},
       pyright = {}
     }
