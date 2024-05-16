@@ -21,6 +21,16 @@ return {
   -- flash
   {
     "folke/flash.nvim",
-    opts = {},
+    opts = {
+      search = {
+        multi_window = false
+      },
+      modes = {
+        search = {
+          enabled = true,
+          highlight = { backdrop = true }
+        }
+      }
+    }
   }
 }
