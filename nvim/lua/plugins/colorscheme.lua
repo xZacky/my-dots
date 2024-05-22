@@ -138,6 +138,9 @@ return {
             ["@string.special"] = {
               fg = colors.theme.syn.string
             },
+            ["@type.builtin"] = {
+              fg = colors.theme.syn.type
+            },
             ["@type.builtin.tablegen"] = {
               fg = colors.theme.syn.keyword
             },

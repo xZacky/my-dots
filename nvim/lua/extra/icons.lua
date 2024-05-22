@@ -118,7 +118,7 @@ require("nvim-web-devicons").setup {
     },
     ["gnumakefile"] = {
       icon = "",
-      color = "#c0caf5",
+      color = "#9ece6a",
       name = "Makefile"
     },
     ["gtkrc"] = {
@@ -128,7 +128,7 @@ require("nvim-web-devicons").setup {
     },
     ["makefile"] = {
       icon = "",
-      color = "#c0caf5",
+      color = "#9ece6a",
       name = "Makefile"
     },
     ["node_modules"] = {
@@ -435,7 +435,7 @@ require("nvim-web-devicons").setup {
     },
     ["mk"] = {
       icon = "",
-      color = "#c0caf5",
+      color = "#9ece6a",
       name = "Makefile"
     },
     ["mo"] = {
@@ -584,12 +584,12 @@ require("nvim-web-devicons").setup {
       name = "Xz"
     },
     ["yaml"] = {
-      icon = "",
+      icon = "",
       color = "#cbcb41",
       name = "Yaml"
     },
     ["yml"] = {
-      icon = "",
+      icon = "",
       color = "#cbcb41",
       name = "Yml"
     },
