@@ -90,7 +90,7 @@ return {
                 operator = "#f7768e",   -- pink
                 preproc = "#bb9af7",    -- magenta
                 type = "#73daca",       -- aqua
-                regex = "#bb9af7",      -- magenta
+                regex = "#9ece6a",      -- green
                 comment = "#565f89",    -- gray
                 punct = "#bb9af7",      -- magenta
                 special1 = "#ff9e64",   -- function call, orange
@@ -114,20 +114,26 @@ return {
               bold = false
             },
             -- treesitter
-            ["@attribute.mlir"] = {
-              fg = colors.theme.syn.string
+            ["@attribute.python"] = {
+              fg = colors.theme.syn.operator
+            },
+            ["@attribute.builtin.python"] = {
+              fg = colors.theme.syn.operator
             },
             ["@constant.builtin"] = {
-              fg = colors.theme.syn.keyword
+              fg = colors.theme.syn.number
             },
-            ["@function.builtin"] = {
+            ["@constructor"] = {
+              fg = colors.theme.syn.type
+            },
+            ["@keyword.directive"] = {
               fg = colors.theme.syn.preproc
             },
             ["@keyword.operator"] = {
               bold = false
             },
-            ["@keyword.directive"] = {
-              fg = colors.theme.syn.preproc
+            ["@keyword.conditional.ternary.cpp"] = {
+              fg = colors.theme.syn.operator
             },
             ["@punctuation.special"] = {
               fg = colors.theme.syn.punct
@@ -145,7 +151,7 @@ return {
               fg = colors.theme.syn.keyword
             },
             ["@variable.builtin"] = {
-              fg = colors.theme.syn.keyword,
+              fg = colors.theme.syn.variable,
               italic = false
             },
             ["@variable.builtin.tablegen"] = {
@@ -153,12 +159,6 @@ return {
               italic = false
             },
             ["@variable.cpp"] = {
-              fg = colors.theme.syn.variable
-            },
-            ["@variable.llvm"] = {
-              fg = colors.theme.syn.variable
-            },
-            ["@variable.mlir"] = {
               fg = colors.theme.syn.variable
             },
             ["@variable.python"] = {
@@ -177,8 +177,17 @@ return {
             ["@lsp.type.enumMember"] = {
               fg = colors.theme.syn.identifier
             },
+            ["@lsp.type.macro"] = {
+              fg = colors.theme.syn.preproc
+            },
+            ["@lsp.type.modifier"] = {
+              fg = colors.theme.syn.keyword
+            },
             ["@lsp.type.namespace"] = {
               fg = colors.theme.syn.identifier
+            },
+            ["@lsp.type.operator"] = {
+              fg = "none"
             },
             ["@lsp.type.variable"] = {
               fg = colors.theme.syn.variable

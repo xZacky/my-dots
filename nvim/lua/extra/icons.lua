@@ -201,7 +201,7 @@ require("nvim-web-devicons").setup {
     ["cc"] = {
       icon = "",
       color = "#519aba",
-      name = "CPlusPlus"
+      name = "Cpp"
     },
     ["cfg"] = {
       icon = "",
