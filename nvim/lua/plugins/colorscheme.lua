@@ -29,7 +29,7 @@ return {
         -- black4: #242836
         -- black5: #292e42
         -- black6: #545c7e
-        -- gray: #565f89
+        -- gray: #666f99
         -- white: #c0caf5
         -- red: #db4b4b
         -- pink: #f7768e
@@ -91,7 +91,7 @@ return {
                 preproc = "#bb9af7",    -- magenta
                 type = "#73daca",       -- aqua
                 regex = "#9ece6a",      -- green
-                comment = "#565f89",    -- gray
+                comment = "#666f99",    -- gray
                 punct = "#bb9af7",      -- magenta
                 special1 = "#ff9e64",   -- function call, orange
                 special2 = "#7aa2f7",   -- blue
@@ -173,6 +173,9 @@ return {
             -- LSP
             ["@lsp.type.bracket"] = {
               fg = colors.theme.syn.punct
+            },
+            ["@lsp.type.comment"] = {
+              fg = colors.theme.syn.comment
             },
             ["@lsp.type.enumMember"] = {
               fg = colors.theme.syn.identifier
