@@ -50,3 +50,6 @@ opt.backup = false
 
 -- automatically execute .nvim.lua
 opt.exrc = true
+
+-- triggers event faster
+opt.updatetime = 200
