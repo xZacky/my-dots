@@ -54,7 +54,7 @@ return {
           }
         },
       },
-      view = { width = 33 }
+      view = { width = 32 }
     }
 
     vim.keymap.set("n", "<Leader>e", "<Cmd>NvimTreeToggle<CR>")

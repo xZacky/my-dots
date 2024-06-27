@@ -68,8 +68,7 @@ return {
         completion = {
           border = "none",
           scrollbar = false
-        },
-        documentation = cmp.config.disable
+        }
       },
       sorting = {
         priority_weight = 1.0,

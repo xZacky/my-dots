@@ -7,7 +7,6 @@ return {
   dependencies = {
     "rcarriga/nvim-dap-ui",
     "nvim-neotest/nvim-nio",
-    "theHamsta/nvim-dap-virtual-text",
     "jay-babu/mason-nvim-dap.nvim"
   },
   config = function()
@@ -17,28 +16,16 @@ return {
       layouts = {
         {
           elements = {
-            {
-              id = "console",
-              size = 0.4
-            },
-            {
-              id = "stacks",
-              size = 0.3
-            },
-            {
-              id = "breakpoints",
-              size = 0.3
-            }
+            { id = "console",     size = 0.4 },
+            { id = "stacks",      size = 0.3 },
+            { id = "breakpoints", size = 0.3 }
           },
           position = "left",
-          size = 33
+          size = 32
         },
         {
           elements = {
-            {
-              id = "scopes",
-              size = 1
-            }
+            { id = "scopes", size = 1 }
           },
           position = "bottom",
           size = 11
@@ -50,9 +37,6 @@ return {
         open = "<CR>",
         repl = {}
       }
-    }
-    require("nvim-dap-virtual-text").setup {
-      enabled = true
     }
 
     require("mason-nvim-dap").setup {
