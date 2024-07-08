@@ -10,14 +10,14 @@
     "modules-center": ["clock"],
     "modules-right": ["backlight", "pulseaudio", "network", "bluetooth", "battery"],
     "cpu": {
-        "format": "  {usage}%"
+        "format": "   {usage}%"
     },
     "memory": {
-        "format": "  {percentage}%",
+        "format": "   {percentage}%",
         "tooltip-format": "{used:0.1f}GiB"
     },
     "disk": {
-        "format": "  {percentage_used}%",
+        "format": "   {percentage_used}%",
         "tooltip-format": "{used}/{total}"
     },
     "hyprland/workspaces": {
