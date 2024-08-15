@@ -151,7 +151,7 @@ return {
               fg = colors.theme.syn.keyword
             },
             ["@variable.builtin"] = {
-              fg = colors.theme.syn.variable,
+              fg = colors.theme.syn.identifier,
               italic = false
             },
             ["@variable.builtin.tablegen"] = {

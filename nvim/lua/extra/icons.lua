@@ -584,12 +584,12 @@ require("nvim-web-devicons").setup {
       name = "Xz"
     },
     ["yaml"] = {
-      icon = "",
+      icon = "",
       color = "#cbcb41",
       name = "Yaml"
     },
     ["yml"] = {
-      icon = "",
+      icon = "",
       color = "#cbcb41",
       name = "Yml"
     },

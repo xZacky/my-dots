@@ -13,6 +13,9 @@ return {
     require("nvim-treesitter.configs").setup {
       highlight = {
         enable = true,
+        disable = {
+          "mlir"
+        },
         additional_vim_regex_highlighting = false
       },
       indent = {
