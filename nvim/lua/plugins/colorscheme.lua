@@ -114,26 +114,14 @@ return {
               bold = false
             },
             -- treesitter
-            ["@attribute.python"] = {
-              fg = colors.theme.syn.operator
-            },
-            ["@attribute.builtin.python"] = {
-              fg = colors.theme.syn.operator
-            },
             ["@constant.builtin"] = {
               fg = colors.theme.syn.number
-            },
-            ["@constructor"] = {
-              fg = colors.theme.syn.type
             },
             ["@keyword.directive"] = {
               fg = colors.theme.syn.preproc
             },
             ["@keyword.operator"] = {
               bold = false
-            },
-            ["@keyword.conditional.ternary.cpp"] = {
-              fg = colors.theme.syn.operator
             },
             ["@punctuation.special"] = {
               fg = colors.theme.syn.punct
@@ -147,28 +135,9 @@ return {
             ["@type.builtin"] = {
               fg = colors.theme.syn.type
             },
-            ["@type.builtin.tablegen"] = {
-              fg = colors.theme.syn.keyword
-            },
             ["@variable.builtin"] = {
               fg = colors.theme.syn.identifier,
               italic = false
-            },
-            ["@variable.builtin.tablegen"] = {
-              fg = colors.theme.syn.variable,
-              italic = false
-            },
-            ["@variable.cpp"] = {
-              fg = colors.theme.syn.variable
-            },
-            ["@variable.python"] = {
-              fg = colors.theme.syn.variable
-            },
-            ["@variable.tablegen"] = {
-              fg = colors.theme.syn.type
-            },
-            ["@variable.parameter.tablegen"] = {
-              fg = colors.theme.syn.type
             },
             -- LSP
             ["@lsp.type.bracket"] = {
@@ -206,6 +175,55 @@ return {
             },
             ["@lsp.typemod.variable.defaultLibrary"] = {
               fg = colors.theme.syn.variable
+            },
+            -- cpp
+            ["@keyword.conditional.ternary.cpp"] = {
+              fg = colors.theme.syn.operator
+            },
+            ["@variable.cpp"] = {
+              fg = colors.theme.syn.variable
+            },
+            -- tablegen
+            ["@type.builtin.tablegen"] = {
+              fg = colors.theme.syn.keyword
+            },
+            ["@variable.builtin.tablegen"] = {
+              fg = colors.theme.syn.variable,
+              italic = false
+            },
+            ["@variable.tablegen"] = {
+              fg = colors.theme.syn.type
+            },
+            ["@variable.parameter.tablegen"] = {
+              fg = colors.theme.syn.type
+            },
+            -- python
+            ["@variable.python"] = {
+              fg = colors.theme.syn.variable
+            },
+            ["@variable.member.python"] = {
+              fg = colors.theme.syn.variable
+            },
+            ["@constructor.python"] = {
+              fg = colors.theme.syn.type
+            },
+            ["@function.python"] = {
+              fg = colors.theme.syn.variable
+            },
+            ["@function.call.python"] = {
+              fg = colors.theme.syn.variable
+            },
+            ["@function.method.python"] = {
+              fg = colors.theme.syn.variable
+            },
+            ["@function.method.call.python"] = {
+              fg = colors.theme.syn.variable
+            },
+            ["@function.builtin.python"] = {
+              fg = colors.theme.syn.identifier
+            },
+            ["@attribute.builtin.python"] = {
+              fg = colors.theme.syn.type
             }
           }
         end
