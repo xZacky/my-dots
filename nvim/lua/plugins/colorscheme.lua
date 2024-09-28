@@ -115,7 +115,7 @@ return {
             },
             -- treesitter
             ["@constant.builtin"] = {
-              fg = colors.theme.syn.number
+              fg = colors.theme.syn.number,
             },
             ["@keyword.directive"] = {
               fg = colors.theme.syn.preproc
@@ -183,6 +183,9 @@ return {
             ["@variable.cpp"] = {
               fg = colors.theme.syn.variable
             },
+            ["@function.builtin.cpp"] = {
+              fg = colors.theme.syn.keyword
+            },
             -- tablegen
             ["@type.builtin.tablegen"] = {
               fg = colors.theme.syn.keyword
@@ -224,6 +227,13 @@ return {
             },
             ["@attribute.builtin.python"] = {
               fg = colors.theme.syn.type
+            },
+            ["@character.special.python"] = {
+              fg = colors.theme.syn.operator
+            },
+            -- lua
+            ["@variable.lua"] = {
+              fg = colors.theme.syn.variable
             }
           }
         end

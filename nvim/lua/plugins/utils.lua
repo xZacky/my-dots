@@ -21,6 +21,7 @@ return {
   -- flash
   {
     "folke/flash.nvim",
+    event = "VeryLazy",
     opts = {
       search = {
         multi_window = false

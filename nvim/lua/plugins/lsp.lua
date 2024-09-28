@@ -34,7 +34,16 @@ return {
         }
       },
       marksman = {},
-      pyright = {}
+      pyright = {
+        pyright = {
+          disableTaggedHints = true,
+        },
+        python = {
+          analysis = {
+            typeCheckingMode = "basic"
+          }
+        }
+      }
     }
 
     local on_attach = function()
