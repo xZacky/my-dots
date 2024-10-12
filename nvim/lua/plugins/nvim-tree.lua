@@ -52,7 +52,7 @@ return {
               symlink_open = ""
             }
           }
-        },
+        }
       },
       view = { width = 32 }
     }

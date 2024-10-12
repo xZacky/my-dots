@@ -4,23 +4,12 @@ return {
     lazy = false,
     config = function()
       require("kanagawa").setup {
-        commentStyle = {
-          italic = false
-        },
+        commentStyle = { italic = false },
         functionStyle = {},
-        keywordStyle = {
-          bold = false,
-          italic = false
-        },
-        statementStyle = {
-          bold = false
-        },
-        typeStyle = {
-          bold = false
-        },
-        background = {
-          dark = "wave"
-        },
+        keywordStyle = { bold = false, italic = false },
+        statementStyle = { bold = false },
+        typeStyle = { bold = false },
+        background = { dark = "wave" },
         -- customized colors (inspired by tokyonight)
         -- black0: #0c0c14
         -- black1: #101018
@@ -109,132 +98,51 @@ return {
         overrides = function(colors)
           return {
             -- syntax
-            Boolean = {
-              fg = colors.theme.syn.number,
-              bold = false
-            },
+            Boolean = { fg = colors.theme.syn.number, bold = false },
             -- treesitter
-            ["@constant.builtin"] = {
-              fg = colors.theme.syn.number,
-            },
-            ["@keyword.directive"] = {
-              fg = colors.theme.syn.preproc
-            },
-            ["@keyword.operator"] = {
-              bold = false
-            },
-            ["@punctuation.special"] = {
-              fg = colors.theme.syn.punct
-            },
-            ["@string.escape"] = {
-              bold = false
-            },
-            ["@string.special"] = {
-              fg = colors.theme.syn.string
-            },
-            ["@type.builtin"] = {
-              fg = colors.theme.syn.type
-            },
-            ["@variable.builtin"] = {
-              fg = colors.theme.syn.identifier,
-              italic = false
-            },
-            -- LSP
-            ["@lsp.type.bracket"] = {
-              fg = colors.theme.syn.punct
-            },
-            ["@lsp.type.comment"] = {
-              fg = colors.theme.syn.comment
-            },
-            ["@lsp.type.enumMember"] = {
-              fg = colors.theme.syn.identifier
-            },
-            ["@lsp.type.macro"] = {
-              fg = colors.theme.syn.preproc
-            },
-            ["@lsp.type.modifier"] = {
-              fg = colors.theme.syn.keyword
-            },
-            ["@lsp.type.namespace"] = {
-              fg = colors.theme.syn.identifier
-            },
-            ["@lsp.type.operator"] = {
-              fg = "none"
-            },
-            ["@lsp.type.variable"] = {
-              fg = colors.theme.syn.variable
-            },
-            ["@lsp.typemod.function.defaultLibrary"] = {
-              fg = colors.theme.syn.fun
-            },
-            ["@lsp.typemod.method.defaultLibrary"] = {
-              fg = colors.theme.syn.fun
-            },
-            ["@lsp.typemod.operator.definition"] = {
-              fg = colors.theme.syn.fun
-            },
-            ["@lsp.typemod.variable.defaultLibrary"] = {
-              fg = colors.theme.syn.variable
-            },
+            ["@constant.builtin"] = { fg = colors.theme.syn.number },
+            ["@keyword.directive"] = { fg = colors.theme.syn.preproc },
+            ["@keyword.operator"] = { bold = false },
+            ["@punctuation.special"] = { fg = colors.theme.syn.punct },
+            ["@string.escape"] = { bold = false },
+            ["@string.special"] = { fg = colors.theme.syn.string },
+            ["@type.builtin"] = { fg = colors.theme.syn.type },
+            ["@variable.builtin"] = { fg = colors.theme.syn.identifier, italic = false },
+            -- lsp
+            ["@lsp.type.bracket"] = { fg = colors.theme.syn.punct },
+            ["@lsp.type.comment"] = { fg = colors.theme.syn.comment },
+            ["@lsp.type.enumMember"] = { fg = colors.theme.syn.identifier },
+            ["@lsp.type.macro"] = { fg = colors.theme.syn.preproc },
+            ["@lsp.type.modifier"] = { fg = colors.theme.syn.keyword },
+            ["@lsp.type.namespace"] = { fg = colors.theme.syn.identifier },
+            ["@lsp.type.operator"] = { fg = "none" },
+            ["@lsp.type.variable"] = { fg = colors.theme.syn.variable },
+            ["@lsp.typemod.function.defaultLibrary"] = { fg = colors.theme.syn.fun },
+            ["@lsp.typemod.method.defaultLibrary"] = { fg = colors.theme.syn.fun },
+            ["@lsp.typemod.operator.definition"] = { fg = colors.theme.syn.fun },
+            ["@lsp.typemod.variable.defaultLibrary"] = { fg = colors.theme.syn.variable },
             -- cpp
-            ["@keyword.conditional.ternary.cpp"] = {
-              fg = colors.theme.syn.operator
-            },
-            ["@variable.cpp"] = {
-              fg = colors.theme.syn.variable
-            },
-            ["@function.builtin.cpp"] = {
-              fg = colors.theme.syn.keyword
-            },
+            ["@keyword.conditional.ternary.cpp"] = { fg = colors.theme.syn.operator },
+            ["@variable.cpp"] = { fg = colors.theme.syn.variable },
+            ["@function.builtin.cpp"] = { fg = colors.theme.syn.keyword },
             -- tablegen
-            ["@type.builtin.tablegen"] = {
-              fg = colors.theme.syn.keyword
-            },
-            ["@variable.builtin.tablegen"] = {
-              fg = colors.theme.syn.variable,
-              italic = false
-            },
-            ["@variable.tablegen"] = {
-              fg = colors.theme.syn.type
-            },
-            ["@variable.parameter.tablegen"] = {
-              fg = colors.theme.syn.type
-            },
+            ["@type.builtin.tablegen"] = { fg = colors.theme.syn.keyword },
+            ["@variable.builtin.tablegen"] = { fg = colors.theme.syn.variable, italic = false },
+            ["@variable.tablegen"] = { fg = colors.theme.syn.type },
+            ["@variable.parameter.tablegen"] = { fg = colors.theme.syn.type },
             -- python
-            ["@variable.python"] = {
-              fg = colors.theme.syn.variable
-            },
-            ["@variable.member.python"] = {
-              fg = colors.theme.syn.variable
-            },
-            ["@constructor.python"] = {
-              fg = colors.theme.syn.type
-            },
-            ["@function.python"] = {
-              fg = colors.theme.syn.variable
-            },
-            ["@function.call.python"] = {
-              fg = colors.theme.syn.variable
-            },
-            ["@function.method.python"] = {
-              fg = colors.theme.syn.variable
-            },
-            ["@function.method.call.python"] = {
-              fg = colors.theme.syn.variable
-            },
-            ["@function.builtin.python"] = {
-              fg = colors.theme.syn.identifier
-            },
-            ["@attribute.builtin.python"] = {
-              fg = colors.theme.syn.type
-            },
-            ["@character.special.python"] = {
-              fg = colors.theme.syn.operator
-            },
+            ["@variable.python"] = { fg = colors.theme.syn.variable },
+            ["@variable.member.python"] = { fg = colors.theme.syn.variable },
+            ["@constructor.python"] = { fg = colors.theme.syn.type },
+            ["@function.python"] = { fg = colors.theme.syn.variable },
+            ["@function.call.python"] = { fg = colors.theme.syn.variable },
+            ["@function.method.python"] = { fg = colors.theme.syn.variable },
+            ["@function.method.call.python"] = { fg = colors.theme.syn.variable },
+            ["@function.builtin.python"] = { fg = colors.theme.syn.identifier },
+            ["@attribute.builtin.python"] = { fg = colors.theme.syn.type },
+            ["@character.special.python"] = { fg = colors.theme.syn.operator },
             -- lua
-            ["@variable.lua"] = {
-              fg = colors.theme.syn.variable
-            }
+            ["@variable.lua"] = { fg = colors.theme.syn.variable }
           }
         end
       }
