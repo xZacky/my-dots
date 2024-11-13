@@ -119,6 +119,7 @@ return {
             ["@lsp.type.variable"] = { fg = colors.theme.syn.variable },
             ["@lsp.typemod.function.defaultLibrary"] = { fg = colors.theme.syn.fun },
             ["@lsp.typemod.method.defaultLibrary"] = { fg = colors.theme.syn.fun },
+            ["@lsp.typemod.operator.declaration"] = { fg = colors.theme.syn.fun },
             ["@lsp.typemod.operator.definition"] = { fg = colors.theme.syn.fun },
             ["@lsp.typemod.variable.defaultLibrary"] = { fg = colors.theme.syn.variable },
             -- cpp
