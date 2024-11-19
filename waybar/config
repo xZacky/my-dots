@@ -10,7 +10,7 @@
     "modules-center": ["clock"],
     "modules-right": ["backlight", "pulseaudio", "network", "bluetooth", "battery"],
     "cpu": {
-        "format": "󰚩 {usage}%"
+        "format": " {usage}%"
     },
     "memory": {
         "format": "󰈰 {percentage}%",
@@ -47,32 +47,29 @@
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "format-bluetooth": "󰂰 {volume}%",
-        "format-bluetooth-muted": "󰂰 muted",
+        "format-bluetooth": "󰂯 {volume}%",
+        "format-bluetooth-muted": "󰂯 muted",
         "format-muted": "󰓃 muted",
         "format-icons": {
             "headphone": "󰋋",
-            "phone": "󰏲",
-            "portable": "",
-            "car": "󰄋",
             "default": "󰓃"
         },
         "on-click": "pavucontrol"
     },
     "network": {
-        "format-wifi": "󰖩 {essid}",
-        "format-ethernet": "󰛳 wired",
-        "format-disconnected": " disconnected",
-        "tooltip-format-wifi": "󰖩 {essid}",
-        "tooltip-format-ethernet": "󰛳 {ifname}",
-        "tooltip-format-disconnected": " disconnected"
+        "format-wifi": "󰑔 {essid}",
+        "format-ethernet": "󰈁 wired",
+        "format-disconnected": "󰈁 disconnected",
+        "tooltip-format-wifi": "󰑔 {essid}",
+        "tooltip-format-ethernet": "󰈁 {ifname}",
+        "tooltip-format-disconnected": "󰈁 disconnected"
     },
     "bluetooth": {
-        "format": "󰂴 {status}",
-        "format-connected": "󰂴 {device_alias}",
+        "format": "󰂯 {status}",
+        "format-connected": "󰂯 {device_alias}",
         "tooltip": true,
-        "tooltip-format": "󰂴 {status}",
-        "tooltip-format-connected": "󰂴 {device_alias}",
+        "tooltip-format": "󰂯 {status}",
+        "tooltip-format-connected": "󰂯 {device_alias}",
         "on-click": "~/.config/waybar/scripts/bluetooth.sh &"
     },
     "battery": {

@@ -1,6 +1,6 @@
 * {
-  font-family: "Ubuntu Nerd Font";
-  font-size: 14px;
+  font-family: "NotoMono Nerd Font Mono";
+  font-size: 15px;
 }
 
 window#waybar {
@@ -13,7 +13,7 @@ window#waybar {
 }
 
 #workspaces button {
-  padding: 2px 8px 1px 8px;
+  padding: 1px 8px 1px 8px;
   color: #565f89; /* gray */
   background-color: transparent;
   border: none;
