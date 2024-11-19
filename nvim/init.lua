@@ -31,7 +31,7 @@ require("lazy").setup("plugins", {
       runtime = "",
       require = "",
       source = "",
-      start = "󰐊",
+      start = "󱦰",
       task = "󰄬"
     }
   }

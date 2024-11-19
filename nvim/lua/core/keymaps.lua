@@ -32,17 +32,20 @@ keymap.set("n", "<C-a>", "ggVG")
 -- undo
 keymap.set("n", "<C-z>", "u")
 
--- disable "R"
+-- disable "R" in normal mode
 keymap.set("n", "R", "")
+-- disable "R" in visual mode
 keymap.set("v", "R", "")
 
--- disable "U"
-keymap.set("n", "U", "")
+-- move current line after last line
+keymap.set("n", "U", "d$k$pjddk$")
+-- disable "U" in visual mode
 keymap.set("v", "U", "")
 
--- disable "gd" and "gD"
+-- disable "gd" and "gD" in normal mode
 keymap.set("n", "gd", "")
 keymap.set("n", "gD", "")
+-- disable "gd" and "gD" in visual mode
 keymap.set("v", "gd", "")
 keymap.set("v", "gD", "")
 

@@ -103,9 +103,13 @@ return {
       virtual_text = false,
       severity_sort = true
     }
-    vim.cmd("sign define DiagnosticSignError text=󰯸 texthl=DiagnosticSignError")
-    vim.cmd("sign define DiagnosticSignWarn text=󰰮 texthl=DiagnosticSignWarn")
-    vim.cmd("sign define DiagnosticSignInfo text=󰰄 texthl=DiagnosticSignInfo")
-    vim.cmd("sign define DiagnosticSignHint text=󰰁 texthl=DiagnosticSignHint")
+    vim.cmd("sign define DiagnosticSignError text= texthl=DiagnosticSignError")
+    vim.cmd("sign define DiagnosticSignWarn text= texthl=DiagnosticSignWarn")
+    vim.cmd("sign define DiagnosticSignInfo text= texthl=DiagnosticSignInfo")
+    vim.cmd("sign define DiagnosticSignHint text= texthl=DiagnosticSignHint")
+    vim.cmd("hi DiagnosticUnderlineError cterm=underline gui=underline")
+    vim.cmd("hi DiagnosticUnderlineWarn cterm=underline gui=underline")
+    vim.cmd("hi DiagnosticUnderlineInfo cterm=underline gui=underline")
+    vim.cmd("hi DiagnosticUnderlineHint cterm=underline gui=underline")
   end
 }

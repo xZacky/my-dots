@@ -85,8 +85,8 @@ return {
     vim.cmd("highlight DapBreakpoint guifg=#db4b4b")         -- red
     vim.cmd("highlight DapBreakpointRejected guifg=#666f99") -- gray
     vim.cmd("highlight DapStopped guifg=#db4b4b")            -- red
-    vim.cmd("sign define DapBreakpoint text=󰠭 texthl=DapBreakpoint")
-    vim.cmd("sign define DapBreakpointRejected text=󰠭 texthl=DapBreakpointRejected")
-    vim.cmd("sign define DapStopped text=󰋇 texthl=DapStopped")
+    vim.cmd("sign define DapBreakpoint text= texthl=DapBreakpoint")
+    vim.cmd("sign define DapBreakpointRejected text= texthl=DapBreakpointRejected")
+    vim.cmd("sign define DapStopped text= texthl=DapStopped")
   end
 }

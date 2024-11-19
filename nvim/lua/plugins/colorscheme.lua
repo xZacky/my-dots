@@ -121,6 +121,7 @@ return {
             ["@lsp.typemod.method.defaultLibrary"] = { fg = colors.theme.syn.fun },
             ["@lsp.typemod.operator.declaration"] = { fg = colors.theme.syn.fun },
             ["@lsp.typemod.operator.definition"] = { fg = colors.theme.syn.fun },
+            ["@lsp.typemod.variable.classScope"] = { fg = colors.theme.syn.identifier },
             ["@lsp.typemod.variable.defaultLibrary"] = { fg = colors.theme.syn.variable },
             -- cpp
             ["@keyword.conditional.ternary.cpp"] = { fg = colors.theme.syn.operator },

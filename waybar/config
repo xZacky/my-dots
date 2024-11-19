@@ -10,14 +10,14 @@
     "modules-center": ["clock"],
     "modules-right": ["backlight", "pulseaudio", "network", "bluetooth", "battery"],
     "cpu": {
-        "format": "   {usage}%"
+        "format": "󰚩 {usage}%"
     },
     "memory": {
-        "format": "   {percentage}%",
+        "format": "󰈰 {percentage}%",
         "tooltip-format": "{used:0.1f}GiB"
     },
     "disk": {
-        "format": "   {percentage_used}%",
+        "format": "󰋊 {percentage_used}%",
         "tooltip-format": "{used}/{total}"
     },
     "hyprland/workspaces": {
@@ -42,37 +42,37 @@
     },
     "backlight": {
         "device": "DP-1",
-        "format": "{icon}  {percent}%",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰌵"]
     },
     "pulseaudio": {
-        "format": "{icon}  {volume}%",
-        "format-bluetooth": "󰂯  {volume}%",
-        "format-bluetooth-muted": "󰂯  muted",
-        "format-muted": "󰝟  muted",
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "󰂰 {volume}%",
+        "format-bluetooth-muted": "󰂰 muted",
+        "format-muted": "󰓃 muted",
         "format-icons": {
             "headphone": "󰋋",
             "phone": "󰏲",
             "portable": "",
             "car": "󰄋",
-            "default": ["󰕿", "󰖀", "󰕾"]
+            "default": "󰓃"
         },
         "on-click": "pavucontrol"
     },
     "network": {
-        "format-wifi": "󰖩  {essid}",
-        "format-ethernet": "󰛳  wired",
-        "format-disconnected": "  disconnected",
-        "tooltip-format-wifi": "󰖩  {essid}",
-        "tooltip-format-ethernet": "󰛳  {ifname}",
-        "tooltip-format-disconnected": "  disconnected"
+        "format-wifi": "󰖩 {essid}",
+        "format-ethernet": "󰛳 wired",
+        "format-disconnected": " disconnected",
+        "tooltip-format-wifi": "󰖩 {essid}",
+        "tooltip-format-ethernet": "󰛳 {ifname}",
+        "tooltip-format-disconnected": " disconnected"
     },
     "bluetooth": {
-        "format": "󰂯  {status}",
-        "format-connected": "󰂯  {device_alias}",
+        "format": "󰂴 {status}",
+        "format-connected": "󰂴 {device_alias}",
         "tooltip": true,
-        "tooltip-format": "󰂯  {status}",
-        "tooltip-format-connected": "󰂯  {device_alias}",
+        "tooltip-format": "󰂴 {status}",
+        "tooltip-format-connected": "󰂴 {device_alias}",
         "on-click": "~/.config/waybar/scripts/bluetooth.sh &"
     },
     "battery": {
@@ -83,13 +83,13 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}  {capacity}%",
-        "format-warning": "{icon}  {capacity}%",
-        "format-critical": "{icon}  {capacity}%",
-        "format-charging": "  {capacity}%",
-        "format-plugged": "  {capacity}%",
-        "format-full": "  {capacity}%",
-        "format-alt": "{icon}  {time}",
+        "format": "{icon} {capacity}%",
+        "format-warning": "{icon} {capacity}%",
+        "format-critical": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󰂄 {capacity}%",
+        "format-full": "󰂄 {capacity}%",
+        "format-alt": "{icon} {time}",
         "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     }
 }

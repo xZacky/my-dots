@@ -102,10 +102,10 @@ return {
           {
             "diagnostics",
             symbols = {
-              error = "󰯸 ",
-              warn = "󰰮 ",
-              info = "󰰄 ",
-              hint = "󰰁 "
+              error = " ",
+              warn = " ",
+              info = " ",
+              hint = " "
             }
           }
         },
@@ -148,34 +148,9 @@ return {
           modified = { fg = "#ff9e64" },
           dirname = { fg = "#737aa2" },
           basename = { fg = "#a9b1d6", bold = true },
-          context = { fg = "#a9b1d6" },
-          context_file = { fg = "#a9b1d6" },
-          context_module = { fg = "#bb9af7" },
-          context_namespace = { fg = "#bb9af7" },
-          context_package = { fg = "#7dcfff" },
-          context_class = { fg = "#73daca" },
-          context_method = { fg = "#ff9e64" },
-          context_property = { fg = "#7aa2f7" },
-          context_field = { fg = "#7aa2f7" },
-          context_constructor = { fg = "#73daca" },
-          context_enum = { fg = "#73daca" },
-          context_interface = { fg = "#ff9e64" },
-          context_function = { fg = "#ff9e64" },
-          context_variable = { fg = "#7dcfff" },
-          context_constant = { fg = "#7dcfff" },
-          context_string = { fg = "#9ece6a" },
-          context_number = { fg = "#9ece6a" },
-          context_boolean = { fg = "#9ece6a" },
-          context_array = { fg = "#7dcfff" },
-          context_object = { fg = "#7dcfff" },
-          context_key = { fg = "#9ece6a" },
-          context_null = { fg = "#bb9af7" },
-          context_enum_member = { fg = "#7aa2f7" },
-          context_struct = { fg = "#73daca" },
-          context_event = { fg = "#ff9e64" },
-          context_operator = { fg = "#f7768e" },
-          context_type_parameter = { fg = "#73daca" }
-        }
+          context = { fg = "#a9b1d6" }
+        },
+        kinds = false
       }
       vim.api.nvim_create_autocmd({
         "WinResized",
