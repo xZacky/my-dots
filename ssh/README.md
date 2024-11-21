@@ -1,1 +1,1 @@
-put the config file under ~/.ssh/
+* put the config file under ~/.ssh/

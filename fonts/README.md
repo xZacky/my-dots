@@ -1,4 +1,3 @@
-customized NotoMonoNFM font
-using fontforge to edit and generate ttf file
-put ttf file under ~/.local/share/fonts/
-font family: NotoMono Nerd Font Mono
+* customized DejaVu Sans Mono font
+* using fontforge to edit and generate ttf file
+* replace the original ttf files under /usr/share/fonts/
