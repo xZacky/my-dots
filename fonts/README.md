@@ -1,3 +1,3 @@
-* customized Noto Sans Mono font
+* customized Aurulent Sans Mono Nerd Font
 * using fontforge to edit and generate ttf file
-* replace the original ttf files under /usr/share/fonts/noto/
+* put the generated ttf file under .local/share/fonts/
