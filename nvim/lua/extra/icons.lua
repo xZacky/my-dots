@@ -28,7 +28,8 @@ require("nvim-web-devicons").setup {
     ["dockerfile"] = { icon = "", color = "#458ee6", name = "Dockerfile" },
     ["gtkrc"] = { icon = "", color = "#c0caf5", name = "Gtk" },
     ["node_modules"] = { icon = "", color = "#e8274b", name = "NodeModules" },
-    ["PKGBUILD"] = { icon = "󰣇", color = "#0f94d2", name = "PKGBUILD" }
+    ["PKGBUILD"] = { icon = "󰣇", color = "#0f94d2", name = "PKGBUILD" },
+    ["readme.md"] = { icon = "", color = "#ededed", name = "Readme"}
   },
   override_by_extension = {
     ["7z"] = { icon = "", color = "#c0caf5", name = "7z" },
@@ -83,7 +84,7 @@ require("nvim-web-devicons").setup {
     ["log"] = { icon = "", color = "#c0caf5", name = "Log" },
     ["lua"] = { icon = "", color = "#5074e8", name = "Lua" },
     ["luac"] = { icon = "", color = "#5074e8", name = "Lua" },
-    ["md"] = { icon = "", color = "#c0caf5", name = "Md" },
+    ["md"] = { icon = "", color = "#ededed", name = "Md" },
     ["mo"] = { icon = "", color = "#c0caf5", name = "Motoko" },
     ["o"] = { icon = "", color = "#c0caf5", name = "ObjectFile" },
     ["out"] = { icon = "", color = "#c0caf5", name = "Out" },
