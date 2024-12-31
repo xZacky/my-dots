@@ -3,6 +3,7 @@ return {
     "rebelot/kanagawa.nvim",
     lazy = false,
     config = function()
+      ---@diagnostic disable-next-line: missing-fields
       require("kanagawa").setup {
         commentStyle = { italic = false },
         functionStyle = {},
@@ -143,6 +144,7 @@ return {
             ["@function.builtin.python"] = { fg = colors.theme.syn.identifier },
             ["@attribute.builtin.python"] = { fg = colors.theme.syn.type },
             ["@character.special.python"] = { fg = colors.theme.syn.operator },
+            ["@constant.python"] = { fg = colors.theme.syn.identifier },
             -- lua
             ["@variable.lua"] = { fg = colors.theme.syn.variable }
           }

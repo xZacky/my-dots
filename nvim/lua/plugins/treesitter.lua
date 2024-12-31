@@ -32,6 +32,7 @@ return {
     require("vim.treesitter.query").set("tablegen", "injections", "")
     require("vim.treesitter.query").set("lua", "injections", "")
     require("vim.treesitter.query").set("dockerfile", "injections", "")
+    -- python
     require("vim.treesitter.query").set("python", "highlights", [[
 ; From tree-sitter-python licensed under MIT License
 ; Copyright (c) 2016 Max Brunsfeld
@@ -50,7 +51,7 @@ return {
 
 ((identifier) @constant.builtin
   (#lua-match? @constant.builtin "^__[a-zA-Z0-9_]*__$")
-  (#set! priority 101))
+  (#set! priority 105))
 
 ((identifier) @constant.builtin
   (#any-of? @constant.builtin
@@ -95,7 +96,7 @@ return {
 ; Decorators
 ((decorator
   "@" @attribute)
-  (#set! priority 101))
+  (#set! priority 105))
 
 (decorator
   (identifier) @attribute)

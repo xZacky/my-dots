@@ -15,6 +15,9 @@ return {
     local servers = {
       bashls = {},
       clangd = {},
+      -- note: to use cmake-language-server with pyenv-virtualenv, modify cmake-language-server
+      -- under ~/.local/share/nvim/mason/packages/cmake-language-server to use the python
+      -- under ~/.pyenv/versions/<venv>/bin
       cmake = {},
       jsonls = {},
       lua_ls = {
