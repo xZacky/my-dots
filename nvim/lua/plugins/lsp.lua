@@ -69,6 +69,7 @@ return {
     require("neoconf").setup()
     require("neodev").setup()
 
+    ---@diagnostic disable-next-line: missing-fields
     require("mason-lspconfig").setup {
       ensure_installed = vim.tbl_keys(servers),
       handlers = {

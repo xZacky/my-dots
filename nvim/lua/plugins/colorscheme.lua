@@ -144,7 +144,6 @@ return {
             ["@function.builtin.python"] = { fg = colors.theme.syn.identifier },
             ["@attribute.builtin.python"] = { fg = colors.theme.syn.type },
             ["@character.special.python"] = { fg = colors.theme.syn.operator },
-            ["@constant.python"] = { fg = colors.theme.syn.identifier },
             -- lua
             ["@variable.lua"] = { fg = colors.theme.syn.variable }
           }

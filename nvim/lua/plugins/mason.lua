@@ -2,6 +2,7 @@ return {
   "williamboman/mason.nvim",
   cmd = "Mason",
   config = function()
+    ---@diagnostic disable-next-line: missing-fields
     require("mason").setup {
       ui = {
         keymaps = {
