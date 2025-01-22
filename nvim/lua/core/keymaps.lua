@@ -18,10 +18,10 @@ keymap.set("n", "<C-l>", "<C-w>l")
 keymap.set("n", "<C-q>", "<C-w>q")
 
 -- accelerated "j" and "k"
-keymap.set("n", "J", "9j")
-keymap.set("n", "K", "9k")
-keymap.set("v", "J", "9j")
-keymap.set("v", "K", "9k")
+keymap.set("n", "J", "13j")
+keymap.set("n", "K", "13k")
+keymap.set("v", "J", "13j")
+keymap.set("v", "K", "13k")
 
 -- write (save)
 keymap.set("n", "<C-s>", "<Cmd>:w!<CR>")

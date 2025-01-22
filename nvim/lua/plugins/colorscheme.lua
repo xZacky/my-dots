@@ -11,7 +11,7 @@ return {
         statementStyle = { bold = false },
         typeStyle = { bold = false },
         background = { dark = "wave" },
-        -- customized colors (inspired by tokyonight)
+        -- customized colors (from tokyonight)
         -- black0: #0c0c14
         -- black1: #101018
         -- black2: #12121a
@@ -78,7 +78,7 @@ return {
                 parameter = "#7dcfff",  -- cyan
                 fun = "#ff9e64",        -- orange
                 operator = "#f7768e",   -- pink
-                preproc = "#bb9af7",    -- magenta
+                preproc = "#f7768e",    -- pink
                 type = "#73daca",       -- aqua
                 regex = "#9ece6a",      -- green
                 comment = "#666f99",    -- gray
@@ -129,6 +129,7 @@ return {
             ["@variable.cpp"] = { fg = colors.theme.syn.variable },
             ["@function.builtin.cpp"] = { fg = colors.theme.syn.keyword },
             -- tablegen
+            ["@keyword.import.tablegen"] = { fg = colors.theme.syn.keyword },
             ["@type.builtin.tablegen"] = { fg = colors.theme.syn.keyword },
             ["@variable.builtin.tablegen"] = { fg = colors.theme.syn.variable, italic = false },
             ["@variable.tablegen"] = { fg = colors.theme.syn.type },

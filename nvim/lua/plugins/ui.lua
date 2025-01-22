@@ -20,10 +20,13 @@ return {
               separator = true
             }
           },
-          separator_style = "thin",
+          separator_style = { "", "" },
           sort_by = "insert_at_end"
         }
       }
+      vim.cmd("highlight BufferLineFill guibg=#16161e")
+      vim.cmd("highlight BufferLineBackground guibg=#16161e")
+      vim.cmd("highlight BufferLineDevIconDefaultInactivate guibg=#16161e")
     end
   },
   -- indent-blankline
@@ -120,7 +123,7 @@ return {
             -- 2: absolute path
             -- 3: absolute path, with tilde as the home directory
             -- 4: filename and parent directory, with tilde as the home directory
-            path = 0,
+            path = 1,
             -- do not show symbols
             symbols = {
               modified = "",
@@ -130,39 +133,5 @@ return {
         }
       }
     }
-  },
-  -- barbecue
-  {
-    "utilyre/barbecue.nvim",
-    event = "VeryLazy",
-    dependencies = {
-      "SmiteshP/nvim-navic" -- code path
-    },
-    config = function()
-      require("barbecue").setup {
-        create_autocmd = false,
-        theme = {
-          normal = { fg = "#a9b1d6" },
-          ellipsis = { fg = "#737aa2" },
-          separator = { fg = "#737aa2" },
-          modified = { fg = "#ff9e64" },
-          dirname = { fg = "#737aa2" },
-          basename = { fg = "#a9b1d6", bold = true },
-          context = { fg = "#a9b1d6" }
-        },
-        kinds = false
-      }
-      vim.api.nvim_create_autocmd({
-        "WinResized",
-        "BufWinEnter",
-        "CursorHold",
-        "InsertLeave",
-        -- include this if you have set `show_modified` to `true`
-        "BufModifiedSet"
-      }, {
-        group = vim.api.nvim_create_augroup("barbecue.updater", {}),
-        callback = function() require("barbecue.ui").update() end
-      })
-    end
   }
 }

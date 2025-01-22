@@ -94,14 +94,14 @@ return {
       capabilities = capabilities
     }
     -- mlir
-    require("lspconfig").mlir_lsp_server.setup {
-      cmd = {
-        "mlir-lsp-server",
-        "--pretty"
-      },
-      on_attach = on_attach,
-      capabilities = capabilities
-    }
+    -- require("lspconfig").mlir_lsp_server.setup {
+    --   cmd = {
+    --     "mlir-lsp-server",
+    --     "--pretty"
+    --   },
+    --   on_attach = on_attach,
+    --   capabilities = capabilities
+    -- }
 
     vim.diagnostic.config {
       virtual_text = false,

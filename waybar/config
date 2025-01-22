@@ -3,7 +3,7 @@
     "position": "top",
     "margin-top": 2,
     "margin-left": 1,
-    "margin-bottom": 0,
+    "margin-bottom": -1,
     "margin-right": 1,
     "spacing": 2, // Gaps between modules
     "modules-left": ["cpu", "memory", "disk", "hyprland/workspaces"],
