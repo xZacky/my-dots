@@ -51,7 +51,8 @@ return {
               symlink = "",
               symlink_open = ""
             }
-          }
+          },
+          symlink_arrow = " 󱦰 "
         }
       },
       view = { width = 32 }

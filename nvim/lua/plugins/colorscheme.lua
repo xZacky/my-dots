@@ -78,7 +78,7 @@ return {
                 parameter = "#7dcfff",  -- cyan
                 fun = "#ff9e64",        -- orange
                 operator = "#f7768e",   -- pink
-                preproc = "#f7768e",    -- pink
+                preproc = "#bb9af7",    -- magenta
                 type = "#73daca",       -- aqua
                 regex = "#9ece6a",      -- green
                 comment = "#666f99",    -- gray
