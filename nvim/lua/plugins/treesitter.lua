@@ -23,15 +23,18 @@ return {
       },
       auto_install = true,
       ensure_installed = {
-        "lua"
+        "dockerfile",
+        "lua",
+        "tablegen",
+        "python"
       },
       playground = {
         enable = true
       }
     }
-    require("vim.treesitter.query").set("tablegen", "injections", "")
-    require("vim.treesitter.query").set("lua", "injections", "")
     require("vim.treesitter.query").set("dockerfile", "injections", "")
+    require("vim.treesitter.query").set("lua", "injections", "")
+    require("vim.treesitter.query").set("tablegen", "injections", "")
     -- python
     require("vim.treesitter.query").set("python", "highlights", [[
 ; From tree-sitter-python licensed under MIT License
