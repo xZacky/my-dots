@@ -137,14 +137,16 @@ return {
             -- python
             ["@variable.python"] = { fg = colors.theme.syn.variable },
             ["@variable.member.python"] = { fg = colors.theme.syn.variable },
-            ["@constructor.python"] = { fg = colors.theme.syn.type },
+            ["@constructor.python"] = { fg = colors.theme.syn.variable },
             ["@function.python"] = { fg = colors.theme.syn.variable },
             ["@function.call.python"] = { fg = colors.theme.syn.variable },
             ["@function.method.python"] = { fg = colors.theme.syn.variable },
             ["@function.method.call.python"] = { fg = colors.theme.syn.variable },
-            ["@function.builtin.python"] = { fg = colors.theme.syn.identifier },
-            ["@attribute.builtin.python"] = { fg = colors.theme.syn.type },
+            ["@function.builtin.python"] = { fg = colors.theme.syn.variable },
+            ["@attribute.builtin.python"] = { fg = colors.theme.syn.variable },
             ["@character.special.python"] = { fg = colors.theme.syn.operator },
+            ["@type.python"] = { fg = colors.theme.syn.variable },
+            ["@type.builtin.python"] = { fg = colors.theme.syn.variable },
             -- lua
             ["@variable.lua"] = { fg = colors.theme.syn.variable }
           }
