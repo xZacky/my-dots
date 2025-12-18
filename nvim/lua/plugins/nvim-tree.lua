@@ -20,8 +20,8 @@ return {
 
       -- custom mappings
       local keymap = vim.keymap
-      keymap.set("n", "wh", api.node.open.horizontal, opts("Open: Horizontal Split"))
-      keymap.set("n", "wv", api.node.open.vertical, opts("Open: Vertical Split"))
+      keymap.set("n", "hs", api.node.open.horizontal, opts("Open: Horizontal Split"))
+      keymap.set("n", "vs", api.node.open.vertical, opts("Open: Vertical Split"))
       keymap.set("n", "<CR>", api.node.open.edit, opts("Open"))
       keymap.set("n", "a", api.fs.create, opts("Create File Or Directory"))
       keymap.set("n", "c", api.fs.copy.node, opts("Copy"))
@@ -31,7 +31,6 @@ return {
       keymap.set("n", "p", api.fs.paste, opts("Paste"))
       keymap.set("n", "q", api.tree.close, opts("Close"))
       keymap.set("n", "r", api.fs.rename, opts("Rename"))
-      keymap.set("n", "s", api.tree.search_node, opts("Search"))
       keymap.set("n", "x", api.fs.cut, opts("Cut"))
     end
 

@@ -37,8 +37,6 @@ keymap.set("n", "R", "")
 -- disable "R" in visual mode
 keymap.set("v", "R", "")
 
--- move current line after last line
-keymap.set("n", "U", "d$k$pjddk$")
 -- disable "U" in visual mode
 keymap.set("v", "U", "")
 

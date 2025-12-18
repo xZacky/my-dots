@@ -128,6 +128,7 @@ return {
             ["@keyword.conditional.ternary.cpp"] = { fg = colors.theme.syn.operator },
             ["@variable.cpp"] = { fg = colors.theme.syn.variable },
             ["@function.builtin.cpp"] = { fg = colors.theme.syn.keyword },
+            ["@function.macro.cpp"] = { fg = colors.theme.syn.preproc },
             -- tablegen
             ["@keyword.import.tablegen"] = { fg = colors.theme.syn.keyword },
             ["@type.builtin.tablegen"] = { fg = colors.theme.syn.keyword },
