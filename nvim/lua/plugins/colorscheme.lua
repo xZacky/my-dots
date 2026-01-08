@@ -129,6 +129,12 @@ return {
             ["@variable.cpp"] = { fg = colors.theme.syn.variable },
             ["@function.builtin.cpp"] = { fg = colors.theme.syn.keyword },
             ["@function.macro.cpp"] = { fg = colors.theme.syn.preproc },
+            -- cuda
+            ["@keyword.conditional.ternary.cuda"] = { fg = colors.theme.syn.operator },
+            ["@function.macro.cuda"] = { fg = colors.theme.syn.preproc },
+            ["@variable.cuda"] = { fg = colors.theme.syn.variable },
+            ["@lsp.type.function.cuda"] = {},
+            ["@lsp.typemod.function.defaultLibrary.cuda"] = {},
             -- tablegen
             ["@keyword.import.tablegen"] = { fg = colors.theme.syn.keyword },
             ["@type.builtin.tablegen"] = { fg = colors.theme.syn.keyword },
